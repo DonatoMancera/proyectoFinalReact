@@ -1,3 +1,16 @@
+
+### Consideraciones
+
+Del proyecto, hubieron dudas que no pude resolver, me gustaria saber como solucionarlas para asi tener un proyecto mas completo
+
+-en CartWidget, no pude enlazar el quantity para mostrar el numero de compras en el carrito
+-Tuve confuciones con el mostrar por categorias 
+-Al añadir la orden, tuve problemas con el COntext para sacar el total :c
+
+agradezco mucho si me dijeran como solucionar esos temas para tener un proyecto mas organizado y funcional 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -5,6 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
 
 ### `npm start`
 
@@ -68,3 +82,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
