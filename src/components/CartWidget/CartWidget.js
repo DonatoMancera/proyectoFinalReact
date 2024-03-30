@@ -1,18 +1,17 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faCartShopping} from "@fortawesome/free-solid-svg-icons";
 import "./CartWidget.css"
-import { useContext } from 'react';
-import { CartContext } from '../Context/CartContext';
 import { Link } from 'react-router-dom';
-const CartWidget = () =>{
 
-    const { totalQuantity, addItem } = useContext(CartContext);
 
+const CartWidget = ({quantity, price}) =>{
+
+    
 
     return (
-        <div className="d-flex Icono" style={{ display: totalQuantity > 0 ? 'block' : 'none'}}>
+        <div className="d-flex Icono" style={{ display: (price * quantity) > 0 ? 'block' : 'none'}}>
             <Link to="/cart"><FontAwesomeIcon icon={faCartShopping} className="fa-3x"/></Link>
-            <p className="m-0">{addItem.quantity}</p>
+            <p className="m-0">{quantity}</p>
         </div>    
     )
 }

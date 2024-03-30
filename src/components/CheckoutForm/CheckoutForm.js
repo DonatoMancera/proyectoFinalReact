@@ -11,19 +11,27 @@ const CheckoutForm = () =>{
 
     const [orderId, setOrderId] = useState("")
 
-    const comprar = (data) =>{
+    const comprar = (values) => {
         const order = {
-            cliente: data,
-            products: cart,
-            total: total()
-        }
+        cliente: {
+            nombre: values.nombre,
+            telefono: values.telefono,
+            email: values.email,
+        },
+        products: [...cart], 
+        total: total(),
+        };
 
         const orderRef = collection(db, 'Items');
 
-        addDoc(orderRef, order).then((doc) =>{
-            setOrderId(doc.id)
-            clearCart()
+            addDoc(orderRef, order)
+        .then((doc) => {
+            setOrderId(doc.id);
+            clearCart();
         })
+        .catch((error) => {
+        console.error("Error al crear la orden:", error);
+    });
 
         if (orderId) {
             return(

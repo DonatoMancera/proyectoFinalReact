@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 
 import { useParams } from "react-router-dom";
-import { collection, doc, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../services/firebase/firebaseConfig";
 
 
@@ -13,6 +13,7 @@ const ItemListContainer = ({greeting}) =>{
     useEffect(() =>{
         const collectionRef = collection(db, 'Items')
         const q = categoryId ? query(collectionRef, where("category", "==", categoryId)) : collectionRef;
+        console.log(categoryId)
 
         getDocs(q)
         .then((response) =>{

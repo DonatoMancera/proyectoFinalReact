@@ -1,13 +1,13 @@
 
-### Consideraciones
+# Consideraciones
 
-Del proyecto, hubieron dudas que no pude resolver, me gustaria saber como solucionarlas para asi tener un proyecto mas completo
+-  ya se puede ver por categoria los productos
+-  la informacion de carrito tambien se puede ver mejor
 
--en CartWidget, no pude enlazar el quantity para mostrar el numero de compras en el carrito
--Tuve confuciones con el mostrar por categorias 
--Al añadir la orden, tuve problemas con el COntext para sacar el total :c
+pero en CartWidget, no pude agregar el numero
+cuando pido dar la orden, se envia y se limpia el carrito con clearCart(),pero el error que me da es el que agregue en imagen como ERROR.png
 
-agradezco mucho si me dijeran como solucionar esos temas para tener un proyecto mas organizado y funcional 
+me gustaria que me ayudaran a ver que puedo corregir con estos dos faltantes, muchas gracias :)
 
 
 
