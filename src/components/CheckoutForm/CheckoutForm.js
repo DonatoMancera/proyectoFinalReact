@@ -13,7 +13,7 @@ const CheckoutForm = () => {
     const [orderId, setOrderId] = useState("");
 
     const comprar = (e) => {
-        e.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
+        e.preventDefault(); 
 
         const values = {
             nombre: e.target.nombre.value,
